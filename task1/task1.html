@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div style=" display:flex; height: 500px; ">
+        <div class="images"><img src="./pexels-trace-hudson-2529973.jpg" alt=""></div>
+        <div class="images"><img src="./roses-1920x1080-4k-hd-wallpaper-8k-flowers-pink-4884.jpg" alt=""></div>
+        <div class="images"><img src="./sky-1920x1080-4k-5k-wallpaper-8k-stars-mountains-night-5708.jpg" alt=""></div>
+        <div class="images"><img src="./space-shiptwo-1920x1080-vss-unity-space-tourism-2823.jpg" alt=""></div>
+        <div class="images"><img src="./stars-3840x2160-space-8k-15548.jpg" alt="" ></div>
+    </div>
+    <button onclick="maximize(event)">click</button>
+    
+
+    <style>
+        .images{
+            overflow: hidden;
+            border-radius: 75px;
+            width: 4%;
+            margin-left: 10px;
+        }
+        img{
+            /* width: 5%; */
+            height: 100%;
+            
+        }
+        .images:hover{
+            /* width: 50%; */
+            animation-name: expand;
+            animation-duration: 1s;
+        }
+        @keyframes expand {
+            from {width: 4%;}
+            to {width: 50%;}
+        }
+    </style>
+    <!-- <script>
+        var images = document.getElementsByTagName("img");
+        function maximize (event){
+            // images.classList.remove('images');
+            var type = event.target
+            // console.log(type);
+            
+        } -->
+
+    </script>
+</body>
+</html>
